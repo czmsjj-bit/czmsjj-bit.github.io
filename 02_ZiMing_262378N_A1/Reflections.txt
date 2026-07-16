@@ -1,0 +1,10 @@
+Reflections.txt
+(I don't know if using Notepad is the right way to do this)
+
+1. I learnt the importance of having Responsive Web Design (RWD) as it allows a better user experience when someone uses my website.
+
+2. I also learnt that using / having proper semantics is especially helpful as it helps organise our codes and allows browsers / search engines to better render our websites.
+
+3. I also learnt the importance of paddings as it helps space out the text / image boxes we include in the website layouts. 
+
+4. I also learnt that using tables is a way to cleanly display information (although I didn't manage to improve mine).

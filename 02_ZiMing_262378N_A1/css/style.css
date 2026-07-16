@@ -1,0 +1,87 @@
+/* Import custom font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins.extralight.ttf') format('truetype');
+  font-weight: 200;   /* ExtraLight weight */
+  font-style: normal;
+}
+
+body {
+  padding: 10px;
+  background-color: #384959;
+  background-image: url(../images/index_image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Text colors for classes */
+.toptext, .header-text, .prisch, .secsch, .postsec {
+  color: #88BDF2;
+}
+
+.paragraphtext {
+  color: #000000;
+}
+
+/* Core colored panels */
+.orange, .lightgreen, .blue, .gray {
+  margin: 5px;
+  padding: 10px;            /* space inside boxes */
+  box-sizing: border-box;   /* include padding in width/height */
+}
+
+.orange {
+  background: orange;
+}
+
+.lightgreen {
+  background: lightgreen;
+  min-height: 80px;        
+}
+
+.blue {
+  background: lightskyblue;
+  min-height: 100px;
+}
+
+.gray {
+  background: lightgray;
+  min-height: 50px;
+}
+
+/* Medium screens */
+@media (min-width:600px) {
+  .lightgreen { min-height: 100px; }
+  .blue { min-height: 80px; }
+  .gray { width: 48.5%; float: left; }
+}
+
+/* Large screens */
+@media (min-width:1200px) {
+/* Keep header and nav stacked */
+  header.orange, nav.orange {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+/* Sections side by side */
+  .blue {
+    width: 32.5%;
+    min-height: 100px;
+    float: left;
+  }
+
+  .lightgreen {
+    min-height: 200px;
+    width: 100%;
+    float: left;
+  }
+
+  .gray {
+    width: 24.1%;
+    float: left;
+    min-height: 50px;
+  }
+}
