@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title> holygrail Layout </title>
+  <style>
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+
+    body {font-family: Georgia, serif; padding: 10px;}
+
+    header {background: red; display: block; text-align: center; padding: 15px; margin-bottom: 8px;}
+    nav {background: orange; display: block; text-align: center; padding: 12px; margin-bottom: 10px;}
+    footer {background: blue; display: block; text-align: center; padding: 15px;}
+    article {background: pink; display: block; padding: 10px;}
+
+    section {
+      display: inline-block;
+      vertical-align: top;
+      width: 66%;
+      background: yellow;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    section.cls_green {
+      width: 33%;
+      background: green;
+    }
+
+    <!-- spacing between elements -->
+    section > header, article > header {margin-bottom: 10px;}
+	article > p {background: #ddd8f0; padding: 40px 10px; text-align: center; margin-bottom: 10px;}
+
+    <!-- Make paragraph and aside be adjacent of each other -->
+    .row {font-size: 0; margin-bottom: 10px;}
+    .row > p, .row > aside {display: inline-block; vertical-align: top; padding: 60px 10px; text-align: center; font-size: 16px;}
+    .row > p {width: 54%; background: #ddd8f0;}
+    .row > aside{width: 44.8%; margin-left: 5px; margin-bottom: 10px; background: #f8f4d8;}
+
+    section.cls_green > nav {padding: 176px 10px;}
+  </style>
+</head>
+<body>
+
+  <header> header </header>
+  <nav> nav </nav>
+
+  <!-- Left section (66%) -->
+  <section>
+    <header> header </header>
+    <article>
+      <header> header </header>
+      <p> paragraph </p>
+      <div class="row">
+        <p> paragraph </p>
+        <aside> aside </aside>
+      </div>
+      <footer> footer </footer>
+    </article>
+  </section>
+  <!-- Right section (33%) -->
+  <section class="cls_green">
+    <header> header </header>
+    <nav> nav </nav>
+  </section>
+
+  <footer> footer </footer>
+
+</body>
+</html>
